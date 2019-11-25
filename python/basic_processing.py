@@ -1,19 +1,11 @@
 from PIL import Image
 
-import os
-import sys
-
-image = 'image.png'
+image = 'image.JPG'
 
 def Convert():
-  try:
-    Image.open(image).save('image.jpg')
-  except IOError as e:
-    print(e)
+  Image.open(image).save('image.png')
 
-
-def Main():
+def main():
   Convert()
 
-
-Main()
+main()
